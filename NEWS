@@ -1,3 +1,7 @@
+# CHANGES TO v0.3.6 #
+
+ * Import and export of data to matlab files is implemented via rmatio. (#78)
+
 # CHANGES TO v0.3.5 #
 
  * Export of CSVY files now includes commenting the yaml header by default. Import of CSVY accommodates this automatically. (#74)

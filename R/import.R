@@ -207,6 +207,10 @@ import_delim <- function(file, fread = TRUE, sep = "auto", header = "auto", stri
     read.fortran(file = file, format = style, ...)
 }
 
+.import.rio_matlab <- function(file, ...) {
+    read.mat(filename = file, ...)
+}
+
 .import.rio_ods <- function(file, header = TRUE, sheet = NULL, ...) {
     handlingODSheader <- function(x) {
         colnames(x) <- x[1,]

@@ -101,6 +101,10 @@ export_delim <- function(file, x, sep = "\t", row.names = FALSE,
     write.arff(x = x, file = file, ...)
 }
 
+.export.rio_arff <- function(file, x, ...){
+    write.mat(object = x, filename = file, ...)
+}
+
 .export.rio_xlsx <- function(file, x, ...){
     write.xlsx(x = x, file = file, ...)
 }

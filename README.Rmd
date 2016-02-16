@@ -35,6 +35,7 @@ The package also wraps a variety of faster, more stream-lined I/O packages than 
 | "XBASE" database files (.dbf) | Yes | Yes |
 | Excel (.xls) | Yes |  |
 | Excel (.xlsx) | Yes | Yes |
+| Matlab (.mat) | Yes | Yes |
 | Weka Attribute-Relation File Format (.arff) | Yes | Yes |
 | R syntax (.R) | Yes | Yes |
 | Shallow XML documents (.xml) | Yes | Yes |

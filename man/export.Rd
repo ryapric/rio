@@ -27,6 +27,7 @@
     \item Stata (.dta), using \code{\link[haven]{write_dta}}
     \item SPSS (.sav), using \code{\link[haven]{write_sav}}
     \item "XBASE" database files (.dbf), using \code{\link[foreign]{write.dbf}}
+    \item Matlab (.mat), using \code{\link[rmatio]{write.mat}}
     \item Weka Attribute-Relation File Format (.arff), using \code{\link[foreign]{write.arff}}
     \item R syntax object (.R), using \code{\link[base]{dput}} (by default) or \code{\link[base]{dump}} (if \code{format = 'dump'}
     \item Excel (.xlsx), using \code{\link[openxlsx]{write.xlsx}}
