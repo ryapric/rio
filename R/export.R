@@ -101,7 +101,7 @@ export_delim <- function(file, x, sep = "\t", row.names = FALSE,
     write.arff(x = x, file = file, ...)
 }
 
-.export.rio_arff <- function(file, x, ...){
+.export.rio_matlab <- function(file, x, ...){
     write.mat(object = x, filename = file, ...)
 }
 
