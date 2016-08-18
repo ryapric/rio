@@ -35,7 +35,7 @@ Imports:
     jsonlite,
     xml2 (>= 1.0.0),
     curl (>= 0.6),
-    data.table (>= 1.9.5),
+    data.table (>= 1.9.7),
     readxl,
     readr,
     yaml,
