@@ -29,7 +29,7 @@ install:
   ps: Bootstrap
 
 build_script:
-  - travis-tool.sh install_github hadley/haven
+  - travis-tool.sh install_github hadley/haven rdatatable/data.table
   - travis-tool.sh install_deps
 
 test_script:
