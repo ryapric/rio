@@ -207,3 +207,32 @@ It is also possible to use **rio** on the command-line by calling `Rscript` with
 Rscript -e "rio::convert('mtcars.dta', 'mtcars.csv')"
 ```
 
+## Attribute Handling
+
+A major issue that has emerged in the development of this package (and the handling of data files generally) is the inconsistent naming of metadata fields and variable attributes across file formats and across the import/export code used by the various packages on which **rio** depends.
+
+Dataset-level attributes:
+
+| Attribute | rio | Stata (haven) | Stata (foreign) | SPSS (haven) | SAS (haven) |
+| --- | --- | --- | --- | --- |
+| Name | (name of object) | ... | ... | ... | `label` |
+| Description | ... | ... | `datalabel` | ... | ... |
+| Timestamp | ... | ... | `time.stamp` | ... | ... |
+| Format Version | ... | ... | `version` | ... | ... |
+| Variable format | ... | ... | `formats` | ... | ... |
+| Variable type | ... | ... | `types` | ... | ... |
+| Variable name | ... | ... | `var.labels` | ... | ... |
+| Value name | ... | ... | `val.labels` | ... | ... |
+
+
+Variable-level attributes:
+
+| Attribute | rio | Stata (haven) | Stata (foreign) | SPSS (haven) | SAS (haven) |
+| --- | --- | --- | --- | --- | --- |
+| Variable name | ... | `label` | ... | ... | ... |
+| Variable description | `label` | ... | ... | ... | ... |
+| Variable class | `class(x)` | ... | ... | ... | ... |
+| Variable type/format | `type`, `format` | `format.stata` | ... | `format.spss` | `format.sas` |
+| Value labels | `labels` | ... | ... | ... | ... |
+
+
