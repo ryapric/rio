@@ -426,15 +426,5 @@ function(file,
 #' @export
 .import.rio_sql <- function(file, which = 1, ...) {
     requireNamespace("RSQLite")
-    query <- build_sql_query(file)
-    con <- RSQLite::dbConnect(RSQLite::SQLite(), ":memory:")
-    for (statement in query) {
-      RSQLite::dbExecute(con, statement)
-    }
-    db_tables <- list()
-    for (db_table in RSQLite::dbListTables(con)) {
-      db_tables[[db_table]] <- RSQLite::dbReadTable(con, db_table)
-    }
-    RSQLite::dbDisconnect(con)
-    db_tables
+    sqldump::read_sqldump(file, ...)
 }
