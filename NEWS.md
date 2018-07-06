@@ -1,6 +1,6 @@
 # rio 0.5.12
 
- * Add support to `import_list()` for generating a list of R data frames from a SQL dump script.
+ * Add support to `import_list()` for generating a list of R data frames from a SQL dump script. Support is included for SQLite, MySQL, and PostgreSQL dumps.
  * Add better package specification to `install_formats()` so that it reads from the `Suggests` field of the `DESCRIPTION` file.
  * Edit header of `README.Rmd` (and thusly `README.md`) to stop complaining about a lack of title field.
  * Fix typo in `CONTRIBUTING.md` (line said "three arguments", but only listed two).
